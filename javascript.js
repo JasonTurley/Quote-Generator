@@ -8,6 +8,10 @@ var quoteArray = [
         author: 'Jake, Season 5: Time Sandwich'
     }, 
     {
+        content: '"I never knew being fat and lazy was so rewarding!"',
+        author: 'Finn, Season 1: Business Time'
+    },
+    {
         content: '"You just like saying poop that jacks with my brain."',
         author: 'Finn, Season 1: Henchmen'
     },
@@ -38,6 +42,22 @@ var quoteArray = [
     {
         content: '"You\'re weird and old and you kidnap princesses."',
         author: 'Lumpy Space Princess, Season 6: The Prince Who Wanted Everything'
+    },
+    {
+        content: '"Killing pixies is some hardcore evil."',
+        author: 'Marceline, Season 1: Henchmen'
+    },
+    {
+        content: '"Humor is the highest form of intelligence."',
+        author: 'Lamp, Season 6: Friends Forever'
+    },
+    {
+        content: '"A love like theirs will always find a way. It\'ll crawl all up over you and drain you bodily fluids, posining you slowly until you pass out."',
+        author: 'Jake, Season 4: Web Weirdos'
+    },
+    {
+        content: '"With you, I would walk down any road, milady - especially if it leads to the movies."',
+        author: 'Finn, Season 2: The Chamber of Frozen Blades'
     }
 ];
 
@@ -45,7 +65,8 @@ var quoteArray = [
 var button = document.getElementById('new-quote'),
     quote = document.getElementById('text'),
     author = document.getElementById('author'),
-    tweet = document.getElementById('tweet-quote');
+    tweet = document.getElementById('tweet-quote'),
+    total = document.getElementById('quote-total');
 
 // Generate quote on load
 window.onload = generateQuote;
@@ -58,4 +79,5 @@ function generateQuote()
 
     quote.innerHTML = quoteArray[n].content;
     author.innerHTML = '&mdash; ' + quoteArray[n].author;
+    total.innerHTML = quoteArray.length;
 }
