@@ -1,26 +1,64 @@
 .container {
-    max-width: 85%;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
+.container::after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container::after {
+        content: " ";
+        clear: both;
+        display: block;
+    }
+}
+
 .quote-container {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
+    font-size: 90%;
+}
+
+@media screen and (min-width: 1110px) {
+    .quote-container {
+      width: 66.10169%;
+      padding: 6.77966%;
+      font-size: 125%;
+    }
 }
 
 body {
-    background-image: url("images/nightsky.jpg");
-    margin: 50px;
+    background-image: url("images/nightsky-1498x726.jpg");
+    background-repeat: no-repeat;
+    margin: 40px;
     font-family: 'Lucida Sans Unicode', Geneva, sans-serif;
     text-align: center;
     color: aqua;
 }
 
+/* Change background image larger displays */
+@media screen and (min-width: 1600px) {
+    body {
+        background-image: url("images/nightsky-1980x1080.jpg"); 
+        background-repeat: no-repeat;
+    }
+}
+
 h1 {
     display: inline;
     text-align: center;
-    font-size: 40px;
+    font-size: 160%;
     padding: 0.4em 0.8em;
     text-decoration: underline;
 }
@@ -30,12 +68,13 @@ a {
     text-transform: uppercase;
 }
 
-a:hover {
+a:hover,
+a:focus {
     text-decoration: underline;    
 }
 
 #text {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #author {
@@ -47,17 +86,31 @@ a:hover {
 .button-container {
     display: block;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 0 auto;
 }
 
 .button {
     border: none;
     border-radius: 0.7em;
+    margin-top: 100px;
     padding: 1em;
-    width: 40%;
-    font-size: 130%;
-    text-align: center;
+    font-size: 60%;
+    width: 60%;
     font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+@media screen and (min-width: 720px) {
+    .button {
+        border: none;
+        border-radius: 0.7em;
+        padding: 1em;
+        width: 40%;
+        font-size: 110%;
+        text-align: center;
+        font-weight: bold;
+        transition: all 0.2s ease-in-out;
+    }
 }
 
 .twitter-button {
@@ -69,7 +122,8 @@ a:hover {
 
 .button:hover,
 .button:focus {
-    background-color: antiquewhite;
+    background-color: salmon;
+    color: whitesmoke;
 }
 
 footer {
