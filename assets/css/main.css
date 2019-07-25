@@ -8,13 +8,6 @@ body {
     font-size: 10px;
 }
 
-/* Change background image larger displays */
-/* @media screen and (min-width: 1600px) {
-    body {
-        background-image: url("assets/images/nightsky-1980x1080.jpg"); 
-        background-repeat: no-repeat;
-    }
-} */
 .container {
     max-width: 100%;
     margin-left: auto;
@@ -94,8 +87,7 @@ a:focus {
     font-size: 18px;
 } 
 
-.button:hover,
-.button:focus {
+.button:hover {
     background-color: salmon;
     color: whitesmoke;
 }
@@ -107,5 +99,4 @@ footer {
     left: 0;
     text-align: center;
     font-size: 13px;
-    /* z-index: 999; */
 }
