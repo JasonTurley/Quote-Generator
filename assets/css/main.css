@@ -1,0 +1,113 @@
+body {
+    background-image: url("../images/nightsky-1498x726.jpg");
+    background-repeat: no-repeat;
+    margin: 40px;
+    font-family: 'Lucida Sans Unicode', Geneva, sans-serif;
+    text-align: center;
+    color: aqua;
+    font-size: 10px;
+}
+
+/* Change background image larger displays */
+/* @media screen and (min-width: 1600px) {
+    body {
+        background-image: url("assets/images/nightsky-1980x1080.jpg"); 
+        background-repeat: no-repeat;
+    }
+} */
+.container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container::after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container::after {
+        content: " ";
+        clear: both;
+        display: block;
+    }
+}
+
+.quote-container {
+    margin: 0 auto;
+}
+
+h1 {
+    display: inline;
+    text-align: center;
+    font-size: 32px;
+    padding: 0.4em 0.8em;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;    
+}
+
+#text {
+    font-size: 20px;
+}
+
+#author {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.button-container {
+    display: block;
+    text-align: center;
+    margin-top: 0 auto;
+}
+
+.button {
+    border: none;
+    border-radius: 12px;
+    margin-top: 90px;
+    padding: 1.4em;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+.twitter-button {
+    /* display: block; */
+    padding-top: 1em;
+    text-transform: none;
+    font-size: 18px;
+}
+
+.button:hover,
+.button:focus {
+    background-color: salmon;
+    color: whitesmoke;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-size: 13px;
+    /* z-index: 999; */
+}
