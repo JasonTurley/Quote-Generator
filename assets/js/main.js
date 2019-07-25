@@ -58,6 +58,18 @@ var quoteArray = [
     {
         content: '"With you, I would walk down any road, milady - especially if it leads to the movies."',
         author: 'Finn, Season 2: The Chamber of Frozen Blades'
+    },
+    {
+        content: '"Dude, you can\'t stay here if you\'re gonna stank it up with your bad vibes, man!"',
+        author: 'Jake, Season 5: Earth & Water'
+    },
+    {
+        content: '"Hey, Princess Bubblegum, when we bring the dead back to life, will they be filled with worms?"',
+        author: 'Finn, Season 1: Slumber Party Panic'
+    },
+    {
+        content: '"No son, you did good. Having no self-control makes you a tough galoot, like me!"',
+        author: 'Joshua, Season 2: Crystals Have Power'
     }
 ];
 
